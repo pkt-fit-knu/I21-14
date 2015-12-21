@@ -1,0 +1,56 @@
+postgres=# INSERT INTO tablica1 (name, year) VALUES ('Borderlands','2008'), ('The_Binding_Of_Isaac','2011'), ('Mortal_Kombat','2010');
+INSERT 0 3
+postgres=# INSERT INTO tablica2 (genre, name) VALUES ('Action','Borderlands'), ('Arcade','The_Binding_Of_Isaac'), ('Fighting','Mortal_Kombat');
+INSERT 0 3
+postgres=# INSERT INTO tablica3 (favourite, genre) VALUES ('Battlefield','Action'), ('Beat_Hazard','Arcade'), ('Tekken','Fighting');
+INSERT 0 3
+postgres=# INSERT INTO tablica4 (name, budget) VALUES ('Borderlands','1500000'),('The_Binding_Of_Isaac','300000'),('Mortal_Kombat','10000000');
+INSERT 0 3
+postgres=# INSERT INTO tablica5 (favourite, price) VALUES ('Battlefield','20'), ('Beat_Hazard','5'), ('Tekken','35');
+INSERT 0 3
+
+postgres=# SELECT* FROM tablica1;
+         name         | year
+----------------------+------
+ Borderlands          | 2008
+ The_Binding_Of_Isaac | 2011
+ Mortal_Kombat        | 2010
+(3 ¸ª¨þúø)
+
+postgres=# SELECT* FROM tablica2;
+  genre   |         name
+----------+----------------------
+ Action   | Borderlands
+ Arcade   | The_Binding_Of_Isaac
+ Fighting | Mortal_Kombat
+(3 ¸ª¨þúø)
+
+
+postgres=# SELECT* FROM tablica3;
+  favourite  |  genre
+-------------+----------
+ Battlefield | Action
+ Beat_Hazard | Arcade
+ Tekken      | Fighting
+(3 ¸ª¨þúø)
+
+
+postgres=# SELECT* FROM tablica4;
+         name         |  budget
+----------------------+----------
+ Borderlands          |  1500000
+ The_Binding_Of_Isaac |   300000
+ Mortal_Kombat        | 10000000
+(3 ¸ª¨þúø)
+
+
+postgres=# SELECT* FROM tablica5;
+  favourite  | price
+-------------+-------
+ Battlefield |    20
+ Beat_Hazard |     5
+ Tekken      |    35
+(3 ¸ª¨þúø)
+
+
+postgres=#

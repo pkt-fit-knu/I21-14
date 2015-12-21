@@ -1,0 +1,13 @@
+postgres=# CREATE DATABASE games;
+CREATE DATABASE
+postgres=# create table tablica1( Name text PRIMARY KEY, Year integer UNIQUE);
+CREATE TABLE
+postgres=# create table tablica2( Genre text PRIMARY KEY, Name text, FOREIGN KEY(Name) REFERENCES tablica1(Name));
+CREATE TABLE
+postgres=# create table tablica3( Favourite text PRIMARY KEY, Genre text, FOREIGN KEY(Genre) REFERENCES tablica2(Genre));
+CREATE TABLE
+postgres=# create table tablica4( Name text, Budget integer NOT NULL, FOREIGN KEY(Name) REFERENCES tablica1(Name));
+CREATE TABLE
+postgres=# create table tablica5( Favourite text , Price integer UNIQUE, FOREIGN KEY(Favourite) REFERENCES tablica3(Favourite));
+CREATE TABLE
+postgres=#
